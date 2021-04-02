@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello Server is Working')
 })
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.u5uel.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
